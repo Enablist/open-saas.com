@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>
   <title>OpenSaas - open source, geen gedoe</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <style>
     body {
       background: #333;
+      font-size: 100%;
     }
     h1, h2, h3 {
       line-height: 1.2em;
@@ -41,6 +43,26 @@
       color: white;
       margin: 80px;
     }
+    .promiss-boxes {
+      display: flex;
+    }
+
+    @media screen and (max-width: 640px) {
+      h1 {
+        font-size: 3em;
+      }
+      h2 {
+        font-size: 2.2em;
+      }
+      h3 {
+        font-size: 1.6em;
+      }
+
+      .promiss-boxes {
+        display: block;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -50,15 +72,15 @@
     <h1>OpenSaas</h1>
   </header>
   <main>
-    <div style="display: flex">
+    <div class="promiss-boxes">
       <section style="flex: 1">
-        <h3>100% transparante code</h3>
+        <h3>transparante code</h3>
       </section>
       <section style="flex: 1">
-        <h3>100% veilige data</h3>
+        <h3>veilige data</h3>
       </section>
       <section style="flex: 1">
-        <h3>100% ontzorgd</h3>
+        <h3>volledig ontzorgd</h3>
         <p></p>
       </section>
     </div>
