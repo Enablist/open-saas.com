@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>
   <title>OpenSaas - open source, geen gedoe</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -38,6 +39,16 @@
     section {
       padding-top: 80px;
     }
+    .promiss-boxes section {
+      background: #ff0076;
+      color: #fff;
+      margin: 10px;
+      padding: 10px;
+    }
+    .promiss-boxes section h3 {
+      line-height: 1.4em;
+      color: #fff
+    }
     footer {
       text-align: center;
       color: white;
@@ -45,6 +56,30 @@
     }
     .promiss-boxes {
       display: flex;
+      padding-top: 80px;
+    }
+    em,
+    .highlight {
+      color: #ff0076;
+      font-style: italic;
+    }
+
+    .cta {
+      background: #ff0076;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 40px;
+      display: inline-block;
+      font-size: 2em;
+      border-bottom: 4px solid #999;
+    }
+    .cta:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    .cta:active {
+      border-top: 4px solid #fff;
+      border-bottom: 0;
     }
 
     @media screen and (max-width: 640px) {
@@ -53,6 +88,7 @@
       }
       h2 {
         font-size: 2.2em;
+        text-align: center !important; /*ugly*/
       }
       h3 {
         font-size: 1.6em;
@@ -68,30 +104,81 @@
 <body>
   <header>
     <h2>Open source zonder gedoe.</h2>
-    <img src="box.png" style="margin-top: 40px; width: 240px">
-    <h1>OpenSaas</h1>
+    <img src="box.png" style="margin-top: 80px; width: 240px">
+    <h1 style="margin-top: 40px"><span class="highlight">Open</span>Saas</h1>
+    <h3 style="margin-top: 40px">Open source e-participatie tools <em>as a service</em>:</h3>
+    <h3>implementatie, beheer, en ondersteuning</h3>
   </header>
   <main>
+    <a href="tel:+31207220207" class="cta">Bel direct</a>
     <div class="promiss-boxes">
-      <section style="flex: 1">
-        <h3>transparante code</h3>
-      </section>
-      <section style="flex: 1">
-        <h3>veilige data</h3>
-      </section>
-      <section style="flex: 1">
-        <h3>volledig ontzorgd</h3>
-        <p></p>
-      </section>
+      <h2 style="flex: 1; text-align: left; margin-left: 10px">De voordelen van open source...</h2>
+      <div style="flex: 1">
+        <section>
+          <h3>de beste tools</h3>
+          <p>Gemaakt vanuit de eigen behoefte van publieke organisaties, door deze organisaties zelf.</p>
+        </section>
+        <section>
+          <h3>open samenwerking</h3>
+          <p>Samenwerken met andere organisaties en oplossingen delen. Meeliften op alle inspanningen die er wereldwijd worden gedaan.</p>
+        </section>
+        <section>
+          <h3>transparante en flexibel</h3>
+          <p>Alle software is open source, dus er is geen verborgen logica. Alle code is in te zien, (zelf) aan te passen, en te hergebruiken.</p>
+        </section>
+        <section>
+          <h3>actieve ontwikkeling</h3>
+          <p>Onderdeel uitmaken van een wereldwijd netwerk van ontwikkelaars, die op dagelijkse basis werken aan verbeteringen van de software voor digitale participatie.</p>
+        </section>
+      </div>
+    </div>
+    <div class="promiss-boxes">
+      <h2 style="flex: 1; text-align: left; margin-left: 10px">én de voordelen van software as a service!</h2>
+      <div style="flex: 1">
+        <section>
+          <h3>stabiel en veilig</h3>
+          <p>Wij monitoren de software en bieden ondersteuning. De data staat veilig op onze servers, maar is 100% van u: wij doen er niets mee.</p>
+        </section>
+        <section>
+          <h3>volledig aanpasbaar</h3>
+          <p>U krijgt een eigen omgeving, los van andere organisaties. Hierdoor kunnen specifieke aanpassingen eenvoudig worden doorgevoerd.</p>
+        </section>
+        <section>
+          <h3>samen leren</h3>
+          <p>Wij organiseren uitwisseling van kennis, code, en ervaringen met andere organisaties, online en tijdens de regelmatige meetups.</p>
+        </section>
+        <section>
+          <h3>direct aan de slag</h3>
+          <p>Als u zich vandaag aanmeldt, dan staat er morgen al een testomgeving voor u klaar om mee aan de slag te gaan!</p>
+        </section>
+      </div>
     </div>
     <div>
       <section>
         <h2>Snel aan de slag</h2>
         <h3>met de OpenSaas App Store</h3>
-        <p></p>
+        <h3 style="margin-top: 80px; font-weight: 700; color: #333333">Binnenkort beschikbaar!</h3>
       </section>
       <section>
         <h2>OpenSaas partners</h2>
+        <div class="promiss-boxes">
+          <section>
+            <h3>implementatie en training</h3>
+            <p>Software zonder gebruik is natuurlijk niets. Onze partners helpen bij het implementeren van de software in uw organisatie.</p>
+          </section>
+          <section>
+            <h3>maatwerk</h3>
+            <p>De basis van al onze oplossingen is generiek, maar vaak zijn er specifieke wensen: denk bijvoorbeeld aan specifieke functionaliteit, of doorvoeren van uw huisstijl.</p>
+          </section>
+          <section>
+            <h3>kwaliteitscontrole</h3>
+            <p>Vaak willen organisaties controle op de kwaliteit van de code, en de beveiliging van de infrastructuur. Onze partners helpen hierbij.</p>
+          </section>
+          <section>
+            <h3>kennisuitwisseling</h3>
+            <p>Wij organiseren bijeenkomsten en online mogelijkheden voor het delen van ervaringen, het geven van feedback, en het afstemmen van gezamenlijke wensen.</p>
+          </section>
+        </div>
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
@@ -102,8 +189,8 @@
   <footer>
     <img src="box-dark.png" style="margin-bottom: 20px; width: 140px; opacity: 0.3">
     <div style="color: #999">
-      <h3>OpenSaas</h3>
-      <h4>Open source zonder gedoe.</h4>
+      <h3><span class="highlight" style="color: #aaa">Open</span>Saas</h3>
+      <h4 style="font-size: 1.2em; line-height: 2em">Open source zonder gedoe.</h4>
       <p style="margin-top: 10px">
         tel. +31 (0)20 722 02 07<br>
         Juliana van Stolberglaan 10<br>
