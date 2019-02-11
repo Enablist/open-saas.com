@@ -32,7 +32,7 @@ section {
   padding-top: 80px;
 }
 .promiss-boxes section {
-  background: #ff0076;
+  background: #fc4349;
   color: #fff;
   margin: 10px;
   padding: 10px;
@@ -52,12 +52,12 @@ footer {
 }
 em,
 .highlight {
-  color: #ff0076;
+  color: #fc4349;
   font-style: italic;
 }
 
 .cta {
-  background: #ff0076;
+  background: #fc4349;
   color: #fff;
   padding: 10px 20px;
   margin: 40px;
